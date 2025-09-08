@@ -1,7 +1,8 @@
-##  Project Setup Instruction  For Restful API Development 
+###  Project Setup Instruction  For Restful API Development 
 
-### Install Dependencies and Libraries
+- Follow the given instruction steps to implement Rest API 
 
+1 **Clone Repository**
 ```
-npm install cors express jsonwebtoken dotenv mongoose
+git clone 
 ```
