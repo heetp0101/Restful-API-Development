@@ -49,5 +49,16 @@
     - When you send the above request `POST http://localhost:4000/ships/` with the Body you will get success status code 201 and the ship is added
     - Then you can see your ship detail by sending request `GET http://localhost:4000/ships/`.
    
-  
+
+### NOTE 
+
+
+- For `POST`,`PUT` and `DELETE`, you need to add Authorization Header to test/see the result.
+- When you run the node.js server in console or VS Code screen you will get JWT Token
+- Open POSTMAN Tool, in Header Section Add :
+  ```
+  Key : Authorization
+  Value : Bearer <JWT TOKEN>
+  ```
+- After adding authorization you will able to see outcome, without that it will give error status 500 : Internal Server error
     
