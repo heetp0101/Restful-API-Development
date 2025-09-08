@@ -56,6 +56,7 @@
 - For `POST`,`PUT` and `DELETE`, you need to add Authorization Header to test/see the result.
 - When you run the node.js server in console or VS Code screen you will get JWT Token
 - Open POSTMAN Tool, in Header Section Add :
+  
   ```
   Key : Authorization
   Value : Bearer <JWT TOKEN>
