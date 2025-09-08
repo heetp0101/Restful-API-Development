@@ -3,12 +3,13 @@
 - Follow the given instruction steps to implement Rest API 
 
 1. **Clone Repository**
-```
-git clone https://github.com/heetp0101/Restful-API-Development.git
-```
+   ```
+   git clone https://github.com/heetp0101/Restful-API-Development.git
+   ```
 
 2. **Add .env file and add the following environment variables**
-   ```
+
+    ```
    PORT=4000
    MONGO_URI=<MONGODB URI CONNECTION STRING>
    JWT_SECRET=<any string>
