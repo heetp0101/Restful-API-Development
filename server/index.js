@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 // Generate once when server starts
-const token = jwt.sign({ role: "admin" }, process.env.JWT_SECRET, { expiresIn: "1h" });
+const token = jwt.sign({ role: "admin" }, process.env.JWT_SECRET, { expiresIn: "7d" });
 console.log("Test JWT Token:", token);
 
 
