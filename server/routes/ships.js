@@ -17,6 +17,14 @@ router.post('/', auth, async(req,res) => {
         res.status(400).json({ "status" : "error", errors})
     }
 
+    const { name, email } = req.body;
+
+    // ✅ Check for duplicates
+    const existingShip = await Ship.findOne({ name, email });
+    if (existingShip) {
+      return res.status(400).json({ error: "Ship with this name and email already exists." });
+    }
+    
     try {
         const ship = await Ship.create(req.body);
         res.status(201).json(ship);
